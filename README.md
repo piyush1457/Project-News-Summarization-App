@@ -1,4 +1,4 @@
-# Project Overview
+# 📰 Project Overview
 
 This application scrapes news articles related to a company, analyzes sentiment, performs comparative analysis, and generates a Hindi audio summary.
 
