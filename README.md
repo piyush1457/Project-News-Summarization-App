@@ -7,7 +7,8 @@ This application scrapes news articles related to a company, analyzes sentiment,
 🛠️ Installation and Setup
 
 Follow these steps to set up the project on your local machine.
-🔹 1. Install Python
+
+## 🔹 1. Install Python
 
 Ensure Python 3.8+ is installed.
 🔗 Download: https://www.python.org/downloads/
@@ -16,13 +17,13 @@ Verify installation:
 
 python --version
 
-🔹 2. Clone the Repository (If Available)
+## 🔹 2. Clone the Repository (If Available)
 
 git clone https://github.com/your-username/news-summarization-app.git
 cd news-summarization-app
 
 OR manually create a project folder Sumarize and place all Python files in it.
-🔹 3. Create and Activate Virtual Environment
+## 🔹 3. Create and Activate Virtual Environment
 
 python -m venv venv
 
@@ -34,7 +35,7 @@ venv\Scripts\activate
 
 source venv/bin/activate
 
-🔹 4. Install Required Dependencies
+## 🔹 4. Install Required Dependencies
 
 pip install -r requirements.txt
 
@@ -42,22 +43,22 @@ pip install -r requirements.txt
 
 pip install requests beautifulsoup4 nltk gtts fastapi uvicorn streamlit
 
-🚀 Running the Project
-✅ Step 1: Test Individual Scripts
+# 🚀 Running the Project
+## ✅ Step 1: Test Individual Scripts
 
-1️⃣ Test Web Scraping (scraper.py)
+## 1️⃣ Test Web Scraping (scraper.py)
 
 python scraper.py
 
 ✅ Expected Output: A list of news titles and links.
 
-2️⃣ Test Sentiment Analysis (sentiment_analysis.py)
+## 2️⃣ Test Sentiment Analysis (sentiment_analysis.py)
 
 python sentiment_analysis.py
 
 ✅ Expected Output: Positive / Negative / Neutral for sample text.
 
-3️⃣ Test Text-to-Speech (tts.py)
+## 3️⃣ Test Text-to-Speech (tts.py)
 
 python tts.py
 
