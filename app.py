@@ -21,18 +21,18 @@ if st.button("Analyze"):
             st.write(f"### Sentiment Distribution:")
             st.write(data["sentiment_distribution"])
 
-            # ✅ Display Final Sentiment Analysis
-            st.write(f"### 📊 Final Sentiment Analysis:")
+            # Display Final Sentiment Analysis
+            st.write(f"### Final Sentiment Analysis:")
             st.success(data["Final Sentiment Analysis"])
 
-            # ✅ Trigger Hindi TTS
+            # Trigger Hindi TTS
             st.write("🔊 Playing Hindi Summary...")
-            tts_response = requests.get(f"http://127.0.0.1:8000/tts/{data['Final Sentiment Analysis']}")  # ✅ Call TTS API
+            tts_response = requests.get(f"http://127.0.0.1:8000/tts/{data['Final Sentiment Analysis']}") 
             
             if tts_response.status_code == 200:
-                st.success("✅ Audio Generated! Check your system audio.")
+                st.success("Audio Generated! Check your system audio.")
             else:
-                st.error("❌ Failed to generate audio.")
+                st.error("Failed to generate audio.")
 
         else:
             st.error("Failed to fetch news")
