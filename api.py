@@ -16,10 +16,10 @@ def fetch_news(company: str):
     for article in articles:
         article["sentiment"] = get_sentiment(article["title"])
 
-    # ✅ Count sentiment distribution
+    # Count sentiment distribution
     sentiment_counts = Counter(article["sentiment"] for article in articles)
 
-    # ✅ Generate Final Sentiment Analysis
+    # Generate Final Sentiment Analysis
     if sentiment_counts["Positive"] > sentiment_counts["Negative"]:
         final_analysis = f"{company} की खबरें ज्यादातर सकारात्मक हैं। कंपनी की संभावनाएँ बढ़ सकती हैं।"
     elif sentiment_counts["Negative"] > sentiment_counts["Positive"]:
@@ -27,7 +27,7 @@ def fetch_news(company: str):
     else:
         final_analysis = f"{company} की खबरें मिश्रित हैं। स्थिति स्पष्ट नहीं है।"
 
-    # ✅ Generate Hindi Speech
+    # Generate Hindi Speech
     text_to_speech(final_analysis)
 
     return {
